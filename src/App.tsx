@@ -25,7 +25,8 @@ export class App extends Component<{}, State> {
         <p className="App__message">
           {this.state.pressedKey
             ? `The last pressed key is [${this.state.pressedKey}]`
-            : 'Nothing was pressed yet'}
+            : // eslint-disable-next-line prettier/prettier
+            'Nothing was pressed yet'}
         </p>
       </div>
     );
